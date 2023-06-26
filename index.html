@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<head>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+    crossorigin="anonymous"
+  />
+  <script
+    src="https://kit.fontawesome.com/37cb327586.js"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?&family=Permanent+Marker&family=Abril+Fatface&family=Poppins&display=swap"
+    rel="stylesheet"
+  />
+  <title>Crochet</title>
+  <link
+    rel="icon"
+    href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/670/original/yarn_ball.jpg?1685353003"
+  />
+  <style>
+    :root {
+      --headings-font: "Permanent Marker", sans-serif;
+      --main-font: "Poppins", serif;
+    }
+    h1,
+    h2 {
+      font-family: var(--headings-font);
+    }
+    h3,
+    h4,
+    p,
+    a,
+    li {
+      font-family: var(--main-font);
+    }
+    li {
+      list-style: none;
+    }
+    .background {
+      height: 100vh;
+      width: 100%;
+      object-fit: cover;
+      position: relative;
+    }
+
+    .heading {
+      top: 25%;
+      left: 5%;
+      width: 35%;
+    }
+    .intro,
+    .learn-intro,
+    .techniques,
+    .learn-more {
+      height: 100vh;
+      width: 100%;
+    }
+    .intro-text {
+      top: 125%;
+      background-color: rgba(255, 255, 255, 0.7);
+      width: 75%;
+      left: 12.5%;
+      border-radius: 4px;
+    }
+    .learn-intro-text {
+      top: 225%;
+      background-color: rgba(255, 255, 255, 0.7);
+      width: 75%;
+      left: 12.5%;
+      border-radius: 4px;
+    }
+    .tech-content {
+      top: 425%;
+    }
+    h1 {
+      font-size: 60px;
+    }
+    a {
+      color: black;
+      font-size: 30px;
+      width: 150px;
+    }
+    .intro-image {
+      height: 150px;
+      width: 150px;
+      object-fit: cover;
+      margin: 15px;
+    }
+    .tech-image {
+      height: 150px;
+      width: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    .tech-image:hover {
+      opacity: 0.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <div class="head-image position-relative">
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/082/767/original/laark-boshoff-XxDmqx3H56Y-unsplash.jpg?1684752689"
+        class="img-fluid background"
+      />
+    </div>
+    <div class="text-center position-absolute heading">
+      <h1>cro·​chet</h1>
+      <h3>/kroʊˈʃeɪ/</h3>
+      <p>
+        : needlework consisting of the interlocking of looped stitches formed
+        with a single thread and a hooked needle
+      </p>
+      <a href="#intro"><i class="fa-solid fa-angles-down"></i></a>
+    </div>
+  </div>
+
+  <div id="intro" class="intro">
+    <div class="introduction-image position-relative">
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/085/284/original/marco-bianchetti-EvwOjeLu9wc-unsplash.jpg?1686561273"
+        class="img-fluid background"
+      />
+    </div>
+    <div class="text-center intro-text position-absolute mx-auto">
+      <h1>let's get started</h1>
+      <p class="mx-5">
+        I'm kind of obsessed with crochet. Not only is it a fun, relaxing hobby,
+        but it also creates beautiful and useful items. The possibilities of
+        what you can create with crochet are almost endless: toys, clothing,
+        blankets, housewares, bags, and more!
+      </p>
+      <h3>Which describes you?</h3>
+      <a href="#learn" class="btn btn-dark m-2 start"
+        >I want to learn how to crochet</a
+      >
+      <a href="#patterns" class="btn btn-dark m-2 start"
+        >I'm looking for project ideas and patterns</a
+      >
+      <a href="#supplies" class="btn btn-dark m-2 start">I need supplies</a>
+    </div>
+  </div>
+  <div id="learn">
+    <div class="text-center">
+      <div class="learn-intro">
+        <div class="position-relative">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/085/295/original/6a00e551101c548834027880484fec200d-500wi.jpg?1686567507"
+            class="img-fluid background"
+          />
+        </div>
+        <div class="learn-intro-text position-absolute">
+          <h1>learn to crochet</h1>
+          <h3 class="m-5">
+            It's really easy to get started! To begin your first project, you
+            only need to learn a couple key stitches and get a few basic
+            supplies. The supplies you'll need are generally quite affordable
+            and easy to source - you can learn more about sourcing supplies
+            <a href="#supplies">here.</a>
+          </h3>
+          <a href="#learn-more"><i class="fa-solid fa-angles-down"></i></a>
+        </div>
+      </div>
+
+      <div class="row m-3 learn-more" id="learn-more">
+        <div class="col-lg">
+          <h3 class="mx-5">For any and all crochet projects, you'll need:</h3>
+          <div class="row">
+            <div class="col">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/670/original/yarn_ball.jpg?1685353003"
+                class="img-fluid intro-image"
+              />
+              <p>Yarn</p>
+            </div>
+            <div class="col">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/669/original/crochet_hook.png?1685352997"
+                class="img-fluid intro-image"
+              />
+              <p>A crochet hook</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/671/original/darning_needle.jpg?1685353340"
+                class="img-fluid intro-image"
+              />
+              <p>A darning needle</p>
+            </div>
+            <div class="col">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/684/original/scissors.png?1685358369"
+                class="img-fluid intro-image"
+              />
+              <p>Scissors</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg">
+          <h3 class="mx-5">
+            Depending on what you're making, you might also need:
+          </h3>
+          <div class="row">
+            <div class="col">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/666/original/stitch_markers.jpg?1685352975"
+                class="img-fluid intro-image"
+              />
+              <p>Stitch markers</p>
+            </div>
+            <div class="col">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/673/original/safety_eyes.jpg?1685354094"
+                class="img-fluid intro-image"
+              />
+              <p>Safety eyes</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/674/original/stuffing.jpg?1685354199"
+                class="img-fluid intro-image"
+              />
+              <p>Stuffing</p>
+            </div>
+            <div class="col">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/675/original/buttons.jpg?1685354287"
+                class="img-fluid intro-image"
+              />
+              <p>Buttons</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="techniques">
+        <div class="tech-content">
+          <h3 class="m-5">
+            There are a few key techniques you should start with. With just
+            these 4 skills, you can make a huge range of items including
+            amigurumis, garments, bags, blankets, and more. Click on the images
+            for tutorials on each skill.
+          </h3>
+          <div class="row tech-photos">
+            <div class="col">
+              <a
+                href="https://sarahmaker.com/crochet-magic-ring/"
+                target="_blank"
+                ><img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/144/original/crochet_magic_ring.jpg?1685014361"
+                  class="img-fluid tech-image"
+              /></a>
+              <p class="m-2">Magic Ring</p>
+            </div>
+            <div class="col">
+              <a
+                href="https://www.thesprucecrafts.com/chain-stitch-crochet-photo-tutorial-979078"
+                target="_blank"
+                ><img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/145/original/crochet_chain.png?1685014372"
+                  class="img-fluid tech-image"
+              /></a>
+
+              <p class="m-2">Chain</p>
+            </div>
+            <div class="col">
+              <a href="https://sarahmaker.com/single-crochet/" target="_blank"
+                ><img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/238/original/single_crochet.png?1685092670"
+                  class="img-fluid tech-image"
+              /></a>
+
+              <p class="m-2">Single Crochet Stitch</p>
+            </div>
+            <div class="col">
+              <a href="https://sarahmaker.com/double-crochet/" target="_blank"
+                ><img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/239/original/double_crochet.png?1685092694"
+                  class="img-fluid tech-image"
+              /></a>
+
+              <p class="m-2">Double Crochet Stitch</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="patterns">
+    <div class="text-center"><h1>find patterns</h1></div>
+  </div>
+  <div id="supplies">
+    <div class="text-center"><h1>source supplies</h1></div>
+  </div>
+  <div class="footer">
+    <p class="text-center">
+      Coded by
+      <a href="http://www.rlbackie.com" target="_blank">Rachel Blackie</a>
+    </p>
+    <div class="text-center">
+      <a
+        href="https://github.com/rachelblackie"
+        title="See Rachel Blackie's work on GitHub"
+        target="_blank"
+        class="m-3"
+        ><i class="fa-brands fa-github"></i
+      ></a>
+      <a
+        href="https://www.linkedin.com/in/rachel-blackie-273b18127/"
+        title="See Rachel Blackie's LinkedIn profile"
+        target="_blank"
+        class="m-3"
+        ><i class="fa-brands fa-linkedin"></i
+      ></a>
+      <a
+        href="https://www.instagram.com/crochetcaracol/"
+        title="See Rachel Blackie's Instagram profile"
+        target="_blank"
+        class="m-3"
+        ><i class="fa-brands fa-instagram"></i
+      ></a>
+    </div>
+  </div>
+  <script></script>
+</body>
