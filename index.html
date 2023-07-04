@@ -31,19 +31,21 @@
       --headings-font: "Permanent Marker", sans-serif;
       --main-font: "Poppins", serif;
     }
+
     h1,
     h2 {
       font-family: var(--headings-font);
     }
     h3,
     h4,
+    h5,
     p,
     a,
     li {
       font-family: var(--main-font);
     }
     li {
-      list-style: none;
+      font-size: 30px;
     }
     .background {
       height: 100vh;
@@ -57,33 +59,7 @@
       left: 5%;
       width: 35%;
     }
-    .intro,
-    .learn-intro,
-    .techniques,
-    .learn-more {
-      height: 100vh;
-      width: 100%;
-    }
-    .learn-more{
-      --bs-gutter-x: 0;
-    }
-    .intro-text {
-      top: 125%;
-      background-color: rgba(255, 255, 255, 0.7);
-      width: 75%;
-      left: 12.5%;
-      border-radius: 4px;
-    }
-    .learn-intro-text {
-      top: 225%;
-      background-color: rgba(255, 255, 255, 0.7);
-      width: 75%;
-      left: 12.5%;
-      border-radius: 4px;
-    }
-    .tech-content {
-      top: 425%;
-    }
+
     h1 {
       font-size: 60px;
     }
@@ -98,14 +74,29 @@
       object-fit: cover;
       margin: 15px;
     }
+    .makeable-image {
+      height: 300px;
+      width: 300px;
+      object-fit: cover;
+    }
     .tech-image {
       height: 150px;
       width: 150px;
       object-fit: cover;
       border-radius: 50%;
+      border: 2px solid #212529;
     }
     .tech-image:hover {
       opacity: 0.5;
+      border: 3px solid #0a58ca;
+    }
+    .carousel-item {
+      height: 414px;
+    }
+    .carousel-caption {
+      background-color: rgb(255, 255, 255, 0.9);
+      color: #212529;
+      border-radius: 3px;
     }
   </style>
 </head>
@@ -129,53 +120,336 @@
   </div>
 
   <div id="intro" class="intro">
-    <div class="introduction-image position-relative">
-      <img
-        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/085/284/original/marco-bianchetti-EvwOjeLu9wc-unsplash.jpg?1686561273"
-        class="img-fluid background"
-      />
-    </div>
-    <div class="text-center intro-text position-absolute mx-auto">
-      <h1>let's get started</h1>
-      <p class="mx-5">
-        I'm kind of obsessed with crochet. Not only is it a fun, relaxing hobby,
-        but it also creates beautiful and useful items. The possibilities of
-        what you can create with crochet are almost endless: toys, clothing,
-        blankets, housewares, bags, and more!
-      </p>
-      <h3>Which describes you?</h3>
-      <a href="#learn" class="btn btn-dark m-2 start"
-        >I want to learn how to crochet</a
-      >
-      <a href="#patterns" class="btn btn-dark m-2 start"
-        >I'm looking for project ideas and patterns</a
-      >
-      <a href="#supplies" class="btn btn-dark m-2 start">I need supplies</a>
+    <div class="text-center intro-text mx-auto">
+      <h1>what is crochet?</h1>
+      <div class="row">
+        <div class="col-lg">
+          <p class="mx-5">
+            Crochet is a process of creating textiles by using a crochet hook to
+            interlock loops of yarn, thread, or strands of other materials. The
+            name is derived from the French term crochet, meaning 'hook'. Hooks
+            can be made from a variety of materials, such as metal, wood,
+            bamboo, or plastic. The key difference between crochet and knitting,
+            beyond the implements used for their production, is that each stitch
+            in crochet is completed before the next one is begun, while knitting
+            keeps many stitches open at a time.
+          </p>
+          <p class="mx-5">
+            Crochet has been around since the early 19th century, and has gone
+            through many trends. The early 21st century has seen a revival of
+            interest in handcrafts and DIY, as well as improvement of the
+            quality and varieties of yarn. As well as books and classes, there
+            are YouTube tutorials and Instagram videos to help people learn how
+            to crochet.
+          </p>
+        </div>
+        <div class="col-lg">
+          <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/087/993/original/irish_lace.jpg?1688386677"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>
+                    Irish crochet lace became popular in the mid-19th century.
+                  </h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/087/994/original/70s_granny.jpg?1688386686"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>
+                    Granny squares in bright colours were trendy in the 1970s.
+                  </h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/087/997/original/stripe_sweater.jpg?1688387084"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>
+                    Patterns for many styles of crochet clothing are available
+                    today.
+                  </h5>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <h1>What can I crochet?</h1>
+      <h3 class="mx-5">
+        Almost anything! Here are some of the most popular options.
+      </h3>
+      <div class="row m-3 makeable">
+        <div class="col-lg">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/087/955/original/amigurumi.PNG?1688370837"
+            class="img-fluid rounded makeable-image"
+          />
+        </div>
+        <div class="col-lg">
+          <h3>Amigurumi</h3>
+          <p>
+            Amigurumi ("crocheted or knitted stuffed toy") is the Japanese art
+            of knitting or crocheting small, stuffed yarn creatures. The word is
+            a compound of the Japanese words 編み ami, meaning "crocheted or
+            knitted", and 包み kurumi, literally "wrapping". Amigurumi vary in
+            size and there are no restrictions about size or look
+          </p>
+        </div>
+        <div class="col-lg">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/087/961/original/grannny.PNG?1688376932"
+            class="img-fluid rounded makeable-image"
+          />
+        </div>
+        <div class="col-lg">
+          <h3>Granny squares</h3>
+          <p>
+            A granny square is a piece of square fabric produced in crochet by
+            working in rounds from the center outward. Although there is no
+            limit to the maximum size of a granny square, crocheters usually
+            create multiple small squares (called "motifs") and assemble the
+            pieces to make clothing, purses, blankets, and other household
+            textiles.
+          </p>
+        </div>
+      </div>
+      <div class="row m-3 makeable">
+        <div class="col-lg">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/087/960/original/sweater.PNG?1688376773"
+            class="img-fluid rounded makeable-image"
+          />
+        </div>
+        <div class="col-lg">
+          <h3>Clothing</h3>
+          <p>
+            Pretty much an article of clothing can be made in crochet. Sweaters,
+            tops, and cardigans tend to be the most popular.
+          </p>
+        </div>
+        <div class="col-lg">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/087/962/original/hat.jpg?1688377268"
+            class="img-fluid rounded makeable-image"
+          />
+        </div>
+        <div class="col-lg">
+          <h3>Accessories</h3>
+          <p>
+            A wide variety of wearable and home accessories can be made with
+            crochet: hats, scarves, mittens, headbands, bags, pillow covers,
+            wall hangings, and more!
+          </p>
+        </div>
+      </div>
     </div>
   </div>
+
   <div id="learn">
     <div class="text-center">
       <div class="learn-intro">
-        <div class="position-relative">
-          <img
-            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/085/295/original/6a00e551101c548834027880484fec200d-500wi.jpg?1686567507"
-            class="img-fluid background"
-          />
-        </div>
-        <div class="learn-intro-text position-absolute">
+        <div class="learn-intro-text">
           <h1>learn to crochet</h1>
           <h3 class="m-5">
-            It's really easy to get started! To begin your first project, you
-            only need to learn a couple key stitches and get a few basic
-            supplies. The supplies you'll need are generally quite affordable
-            and easy to source - you can learn more about sourcing supplies
-            <a href="#supplies">here.</a>
+            It's really easy to get started! To begin your first project, there
+            are a few key techniques you'll need to learn. With just these 4
+            skills, you can make a huge range of items including amigurumis,
+            garments, bags, blankets, and more. Click on the images for
+            tutorials on each skill.
           </h3>
-          <a href="#learn-more"><i class="fa-solid fa-angles-down"></i></a>
+        </div>
+
+        <div class="techniques row">
+          <div class="tech-content col my-auto">
+            <h3 class="m-5 text-center"></h3>
+            <div class="row tech-photos text-center">
+              <div class="col">
+                <a
+                  href="https://sarahmaker.com/crochet-magic-ring/"
+                  target="_blank"
+                  ><img
+                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/144/original/crochet_magic_ring.jpg?1685014361"
+                    class="img-fluid tech-image"
+                /></a>
+                <p class="m-2">Magic Ring</p>
+              </div>
+              <div class="col">
+                <a
+                  href="https://www.thesprucecrafts.com/chain-stitch-crochet-photo-tutorial-979078"
+                  target="_blank"
+                  ><img
+                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/145/original/crochet_chain.png?1685014372"
+                    class="img-fluid tech-image"
+                /></a>
+
+                <p class="m-2">Chain</p>
+              </div>
+              <div class="col">
+                <a href="https://sarahmaker.com/single-crochet/" target="_blank"
+                  ><img
+                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/238/original/single_crochet.png?1685092670"
+                    class="img-fluid tech-image"
+                /></a>
+
+                <p class="m-2">Single Crochet Stitch</p>
+              </div>
+              <div class="col">
+                <a href="https://sarahmaker.com/double-crochet/" target="_blank"
+                  ><img
+                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/239/original/double_crochet.png?1685092694"
+                    class="img-fluid tech-image"
+                /></a>
+
+                <p class="m-2">Double Crochet Stitch</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
-      <div class="row my-3 mx-0 learn-more" id="learn-more">
+    </div>
+  </div>
+  <div class="patterns" id="patterns">
+    <div class="text-center patterns-text">
+      <h1>find patterns</h1>
+      <h3>
+        There are many places to find patterns online, for free and for
+        purchase.
+      </h3>
+      <ul class="m-5">
+        <li>
+          Some yarn/craft companies offer free patterns on their website - check
+          out
+          <a href="https://www.yarnspirations.com/patterns" target="_blank"
+            >Yarnspirations</a
+          >
+          and
+          <a href="https://www.yarnspirations.com/patterns" target="_blank"
+            >Drops Design</a
+          >.
+        </li>
+        <li>
+          Many bloggers also offer free patterns and tutorials on their websites
+          - some of my favourite are
+          <a href="https://www.crochet365knittoo.com/" target="_blank"
+            >Crochet365</a
+          >
+          and
+          <a href="https://attic24.typepad.com/weblog/crochet/" target="_blank"
+            >Attic 24</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com/explore/tags/crochet/"
+            target="_blank"
+            >Instagram</a
+          >
+          is a great place to find inspiration. Search the hashtag
+          <a
+            href="https://www.instagram.com/explore/tags/crochet/"
+            target="_blank"
+            >#crochet</a
+          >, or get more specific and check out
+          <a
+            href="https://www.instagram.com/explore/tags/amigurumi/"
+            target="_blank"
+            >#amigurumi</a
+          >,
+          <a
+            href="https://www.instagram.com/explore/tags/grannysquare/"
+            target="_blank"
+            >#grannysquare</a
+          >, and more.
+        </li>
+        <li>
+          Many crochet artists also sell patterns on
+          <a
+            href="https://www.etsy.com/ca/search?q=crochet%20patterns&ref=search_bar"
+            target="_blank"
+            >Etsy</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div id="supplies">
+    <div class="text-center">
+      <h1>source supplies</h1>
+      <h3 class="m-5">
+        There are a few key supplies you'll need to get started. For any crochet
+        project, you'll need a hook, yarn, darning needle, and scissors. If you
+        want to make amigurumis, you'll also need stuffing, stitch markers, and
+        you might want safety eyes. For some garments, you may need buttons.
+      </h3>
+      <h3 class="m-5">
+        You can find these items many places. If there is a craft store in your
+        area, they will have everything you need. You can also order supplies
+        online - for those in Europe,
+        <a href="https://www.lastijerasmagicas.com/en/" target="_blank"
+          >Las Tijeras Magicas</a
+        >
+        is one of my favourite retailers.
+      </h3>
+      <div class="row m-5">
         <div class="col-lg my-auto">
           <h3 class="mx-5">For any and all crochet projects, you'll need:</h3>
           <div class="row">
@@ -211,7 +485,6 @@
             </div>
           </div>
         </div>
-        
         <div class="col-lg my-auto">
           <h3 class="mx-5">
             Depending on what you're making, you might also need:
@@ -250,65 +523,9 @@
           </div>
         </div>
       </div>
-      <div class="techniques">
-        <div class="tech-content">
-          <h3 class="m-5">
-            There are a few key techniques you should start with. With just
-            these 4 skills, you can make a huge range of items including
-            amigurumis, garments, bags, blankets, and more. Click on the images
-            for tutorials on each skill.
-          </h3>
-          <div class="row tech-photos">
-            <div class="col">
-              <a
-                href="https://sarahmaker.com/crochet-magic-ring/"
-                target="_blank"
-                ><img
-                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/144/original/crochet_magic_ring.jpg?1685014361"
-                  class="img-fluid tech-image"
-              /></a>
-              <p class="m-2">Magic Ring</p>
-            </div>
-            <div class="col">
-              <a
-                href="https://www.thesprucecrafts.com/chain-stitch-crochet-photo-tutorial-979078"
-                target="_blank"
-                ><img
-                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/145/original/crochet_chain.png?1685014372"
-                  class="img-fluid tech-image"
-              /></a>
-
-              <p class="m-2">Chain</p>
-            </div>
-            <div class="col">
-              <a href="https://sarahmaker.com/single-crochet/" target="_blank"
-                ><img
-                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/238/original/single_crochet.png?1685092670"
-                  class="img-fluid tech-image"
-              /></a>
-
-              <p class="m-2">Single Crochet Stitch</p>
-            </div>
-            <div class="col">
-              <a href="https://sarahmaker.com/double-crochet/" target="_blank"
-                ><img
-                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/239/original/double_crochet.png?1685092694"
-                  class="img-fluid tech-image"
-              /></a>
-
-              <p class="m-2">Double Crochet Stitch</p>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
-  <div id="patterns">
-    <div class="text-center"><h1>find patterns</h1></div>
-  </div>
-  <div id="supplies">
-    <div class="text-center"><h1>source supplies</h1></div>
-  </div>
+
   <div class="footer">
     <p class="text-center">
       Coded by
