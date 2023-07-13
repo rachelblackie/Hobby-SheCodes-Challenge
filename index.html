@@ -35,6 +35,7 @@
     h1,
     h2 {
       font-family: var(--headings-font);
+      color: #212529;
     }
     h3,
     h4,
@@ -43,9 +44,11 @@
     a,
     li {
       font-family: var(--main-font);
+      color: #212529;
     }
     li {
       font-size: 30px;
+      color: #212529;
     }
     .background {
       height: 100vh;
@@ -54,9 +57,7 @@
       position: relative;
     }
     .intro,
-    .examples,
     .learn,
-    .patterns,
     .supplies-one,
     .supplies-two {
       height: 100vh;
@@ -108,11 +109,47 @@
       background-color: rgb(255, 255, 255, 0.9);
       color: #212529;
       border-radius: 3px;
+      padding: 8px;
+    }
+    hr {
+      width: 75%;
+      margin: 0 auto;
+      color: #212529;
+    }
+    .supplies-one {
+      --bs-gutter-x: none;
+    }
+    .hide-for-fade-in {
+      opacity: 0%;
+      -webkit-transition: opacity 0.5s;
+      -o-transition: opacity 0.5s;
+      transition: opacity 0.5s;
+    }
+    .hide-for-fade-in-two {
+      opacity: 0%;
+      -webkit-transition: opacity 1.5s;
+      -o-transition: opacity 1.5s;
+      transition: opacity 1.5s;
+    }
+    .hide-for-fade-in-three {
+      opacity: 0%;
+      -webkit-transition: opacity 2.5s;
+      -o-transition: opacity 2.5s;
+      transition: opacity 2.5s;
+    }
+    .hide-for-fade-in-four {
+      opacity: 0%;
+      -webkit-transition: opacity 3.5s;
+      -o-transition: opacity 3.5s;
+      transition: opacity 3.5s;
+    }
+    .fade-in {
+      opacity: 100%;
     }
   </style>
 </head>
 <body>
-  <div class="hero">
+  <div class="hero" id="hero">
     <div class="head-image position-relative">
       <img
         src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/082/767/original/laark-boshoff-XxDmqx3H56Y-unsplash.jpg?1684752689"
@@ -150,6 +187,9 @@
         and varieties of yarn. As well as books and classes, there are YouTube
         tutorials and Instagram videos to help people learn how to crochet.
       </p>
+      <div class="text-center">
+        <a href="#examples"><i class="fa-solid fa-angles-down"></i></a>
+      </div>
     </div>
     <div class="col-lg my-auto">
       <div
@@ -239,19 +279,20 @@
       </div>
     </div>
   </div>
-  <div class="examples" id="examples">
+
+  <div class="examples m-5" id="examples">
     <h1 class="text-center">What can I crochet?</h1>
     <h3 class="text-center mx-5">
       Almost anything! Here are some of the most popular options.
     </h3>
     <div class="row m-3 makeable">
-      <div class="col-lg my-auto">
+      <div class="transition col-lg my-auto text-center">
         <img
           src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/087/955/original/amigurumi.PNG?1688370837"
           class="img-fluid rounded makeable-image"
         />
       </div>
-      <div class="col-lg my-auto">
+      <div class="transition col-lg my-auto">
         <h3>Amigurumi</h3>
         <p>
           Amigurumi ("crocheted or knitted stuffed toy") is the Japanese art of
@@ -261,13 +302,13 @@
           size and there are no restrictions about size or look
         </p>
       </div>
-      <div class="col-lg my-auto">
+      <div class="transition-two col-lg my-auto text-center">
         <img
           src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/087/961/original/grannny.PNG?1688376932"
           class="img-fluid rounded makeable-image"
         />
       </div>
-      <div class="col-lg my-auto">
+      <div class="transition-two col-lg my-auto">
         <h3>Granny squares</h3>
         <p>
           A granny square is a piece of square fabric produced in crochet by
@@ -279,26 +320,26 @@
       </div>
     </div>
     <div class="row m-3 makeable">
-      <div class="col-lg my-auto">
+      <div class="transition-three col-lg my-auto text-center">
         <img
           src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/087/960/original/sweater.PNG?1688376773"
           class="img-fluid rounded makeable-image"
         />
       </div>
-      <div class="col-lg my-auto">
+      <div class="transition-three col-lg my-auto">
         <h3>Clothing</h3>
         <p>
           Pretty much an article of clothing can be made in crochet. Sweaters,
           tops, and cardigans tend to be the most popular.
         </p>
       </div>
-      <div class="col-lg my-auto">
+      <div class="transition-four col-lg my-auto text-center">
         <img
           src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/087/962/original/hat.jpg?1688377268"
           class="img-fluid rounded makeable-image"
         />
       </div>
-      <div class="col-lg my-auto">
+      <div class="transition-four col-lg my-auto">
         <h3>Accessories</h3>
         <p>
           A wide variety of wearable and home accessories can be made with
@@ -309,7 +350,7 @@
     </div>
   </div>
 
-  <div id="learn" class="learn row">
+  <div id="learn" class="learn row m-5">
     <div class="col-lg my-auto">
       <h1 class="text-center">learn to crochet</h1>
       <h3 class="m-5 text-center">
@@ -321,7 +362,7 @@
 
       <div class="techniques row">
         <div class="row tech-photos text-center">
-          <div class="col-lg">
+          <div class="transition col-md">
             <a href="https://sarahmaker.com/crochet-magic-ring/" target="_blank"
               ><img
                 src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/144/original/crochet_magic_ring.jpg?1685014361"
@@ -329,7 +370,7 @@
             /></a>
             <p class="m-2">Magic Ring</p>
           </div>
-          <div class="col-lg">
+          <div class="transition-two col-md">
             <a
               href="https://www.thesprucecrafts.com/chain-stitch-crochet-photo-tutorial-979078"
               target="_blank"
@@ -340,7 +381,7 @@
 
             <p class="m-2">Chain</p>
           </div>
-          <div class="col-lg">
+          <div class="transition-three col-md">
             <a href="https://sarahmaker.com/single-crochet/" target="_blank"
               ><img
                 src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/238/original/single_crochet.png?1685092670"
@@ -349,7 +390,7 @@
 
             <p class="m-2">Single Crochet Stitch</p>
           </div>
-          <div class="col-lg">
+          <div class="transition-four col-md">
             <a href="https://sarahmaker.com/double-crochet/" target="_blank"
               ><img
                 src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/239/original/double_crochet.png?1685092694"
@@ -359,6 +400,9 @@
             <p class="m-2">Double Crochet Stitch</p>
           </div>
         </div>
+      </div>
+      <div class="text-center mt-5">
+        <a href="#supplies"><i class="fa-solid fa-angles-down"></i></a>
       </div>
     </div>
   </div>
@@ -381,20 +425,22 @@
         >
         is one of my favourite retailers.
       </h3>
+
+      <a href="#supplies-two"><i class="fa-solid fa-angles-down"></i></a>
     </div>
   </div>
-  <div class="supplies-two row m-5 text-center">
+  <div class="supplies-two row m-5 text-center" id="supplies-two">
     <div class="col-lg my-auto">
       <h3 class="mx-5">For any and all crochet projects, you'll need:</h3>
       <div class="row">
-        <div class="col">
+        <div class="transition col-lg">
           <img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/670/original/yarn_ball.jpg?1685353003"
             class="img-fluid intro-image"
           />
           <p>Yarn</p>
         </div>
-        <div class="col">
+        <div class="transition col-lg">
           <img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/669/original/crochet_hook.png?1685352997"
             class="img-fluid intro-image"
@@ -403,14 +449,14 @@
         </div>
       </div>
       <div class="row">
-        <div class="col">
+        <div class="transition col-lg">
           <img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/671/original/darning_needle.jpg?1685353340"
             class="img-fluid intro-image"
           />
           <p>A darning needle</p>
         </div>
-        <div class="col-lg">
+        <div class="transition col-lg">
           <img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/684/original/scissors.png?1685358369"
             class="img-fluid intro-image"
@@ -424,14 +470,14 @@
         Depending on what you're making, you might also need:
       </h3>
       <div class="row">
-        <div class="col">
+        <div class="transition-two col-lg">
           <img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/666/original/stitch_markers.jpg?1685352975"
             class="img-fluid intro-image"
           />
           <p>Stitch markers</p>
         </div>
-        <div class="col">
+        <div class="transition-two col-lg">
           <img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/673/original/safety_eyes.jpg?1685354094"
             class="img-fluid intro-image"
@@ -440,14 +486,14 @@
         </div>
       </div>
       <div class="row">
-        <div class="col">
+        <div class="transition-two col-lg">
           <img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/674/original/stuffing.jpg?1685354199"
             class="img-fluid intro-image"
           />
           <p>Stuffing</p>
         </div>
-        <div class="col">
+        <div class="transition-two col-lg">
           <img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/675/original/buttons.jpg?1685354287"
             class="img-fluid intro-image"
@@ -456,9 +502,12 @@
         </div>
       </div>
     </div>
+    <div class="text-center">
+      <a href="#patterns"><i class="fa-solid fa-angles-down"></i></a>
+    </div>
   </div>
 
-  <div class="patterns row" id="patterns">
+  <div class="patterns row m-5" id="patterns">
     <div class="patterns-text col-lg my-auto">
       <h1 class="text-center">find patterns</h1>
       <h3 class="text-center">
@@ -528,7 +577,11 @@
           </ul>
         </div>
         <div class="col-lg my-auto">
-          <div id="carouselExample" class="carousel slide">
+          <div
+            id="carouselExample"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
             <div class="carousel-indicators">
               <button
                 type="button"
@@ -632,13 +685,16 @@
         </div>
       </div>
     </div>
+    <div class="text-center mt-5">
+      <a href="#hero"><i class="fa-solid fa-angles-up"></i></a>
+    </div>
   </div>
-
-  <div class="footer">
-    <p class="text-center">
+  <hr />
+  <div class="footer m-3">
+    <h3 class="text-center">
       Coded by
       <a href="http://www.rlbackie.com" target="_blank">Rachel Blackie</a>
-    </p>
+    </h3>
     <div class="text-center">
       <a
         href="https://github.com/rachelblackie"
@@ -663,5 +719,54 @@
       ></a>
     </div>
   </div>
-  <script></script>
+  <script>
+    const transition = document.querySelectorAll(".transition");
+    transition.forEach(function (transition) {
+      transition.classList.add("hide-for-fade-in");
+    });
+    transition.forEach(function (transition) {
+      window.addEventListener("scroll", function () {
+        let scroll = window.scrollY;
+        if (scroll > transition.offsetTop - 500) {
+          transition.classList.add("fade-in");
+        }
+      });
+    });
+    const transitionTwo = document.querySelectorAll(".transition-two");
+    transitionTwo.forEach(function (transitionTwo) {
+      transitionTwo.classList.add("hide-for-fade-in-two");
+    });
+    transitionTwo.forEach(function (transitionTwo) {
+      window.addEventListener("scroll", function () {
+        let scroll = window.scrollY;
+        if (scroll > transitionTwo.offsetTop - 500) {
+          transitionTwo.classList.add("fade-in");
+        }
+      });
+    });
+    const transitionThree = document.querySelectorAll(".transition-three");
+    transitionThree.forEach(function (transitionThree) {
+      transitionThree.classList.add("hide-for-fade-in-two");
+    });
+    transitionThree.forEach(function (transitionThree) {
+      window.addEventListener("scroll", function () {
+        let scroll = window.scrollY;
+        if (scroll > transitionThree.offsetTop - 500) {
+          transitionThree.classList.add("fade-in");
+        }
+      });
+    });
+    const transitionFour = document.querySelectorAll(".transition-four");
+    transitionFour.forEach(function (transitionFour) {
+      transitionFour.classList.add("hide-for-fade-in-two");
+    });
+    transitionFour.forEach(function (transitionFour) {
+      window.addEventListener("scroll", function () {
+        let scroll = window.scrollY;
+        if (scroll > transitionFour.offsetTop - 500) {
+          transitionFour.classList.add("fade-in");
+        }
+      });
+    });
+  </script>
 </body>
